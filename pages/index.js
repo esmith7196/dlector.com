@@ -31,13 +31,13 @@ const Home = props => {
       <main style={{ backgroundColor: `${websiteBackgroundColor}` }}>
         <div className="container">
           <img className="logo" src={logo.url} alt={websiteTitle} />
-        </div>
-        <div>
-          <h1>{websiteTitle}</h1>
-        </div>
-        <SocialRow icons={socialLinksCollection} />
-        <div>
-          <LinksRow links={linksCollection.items} />
+          <div>
+            <h1>{websiteTitle}</h1>
+          </div>
+          <SocialRow icons={socialLinksCollection} />
+          <div className="links-row">
+            <LinksRow links={linksCollection.items} />
+          </div>
         </div>
       </main>
     </div>
