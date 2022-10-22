@@ -5,11 +5,11 @@ export default function LinksRow({ links }) {
     <div>
       {links.map((link, index) => {
         return (
-          <button className="link-btn" key={index}>
-            <a href={link.url} target="_blank" rel="noopener noreferrer">
+          <a href={link.url} target="_blank" rel="noopener noreferrer">
+            <button className="link-btn" key={index}>
               {link.label}
-            </a>
-          </button>
+            </button>
+          </a>
         );
       })}
     </div>
